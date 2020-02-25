@@ -4,12 +4,12 @@ class CuboidMaker {
     this.width = width;
     this.height = height;
   }
-  static volume = function(){
-    return length * width * height;
+  volume = function(){
+    return this.length * this.width * this.height;
   }
 
-  static surfaceArea = function(){
-    return 2 * (length * width + length * height + width * height);
+  surfaceArea = function(){
+    return 2 * (this.length * this.width + this.length * this.height + this.width * this.height);
   }
 }
   
